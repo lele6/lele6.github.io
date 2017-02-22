@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Le Le&#39;s Learning Palace</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://lele6.github.io.com/"/>
+  <updated>2017-02-22T00:55:09.000Z</updated>
+  <id>http://lele6.github.io.com/</id>
+  
+  <author>
+    <name>Le Le</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>A New Start</title>
+    <link href="http://lele6.github.io.com/2017/02/21/A-New-Start/"/>
+    <id>http://lele6.github.io.com/2017/02/21/A-New-Start/</id>
+    <published>2017-02-22T00:13:51.000Z</published>
+    <updated>2017-02-22T00:55:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This is my first time to write a blog.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Dribs &amp;&amp; Drabs" scheme="http://lele6.github.io.com/categories/Dribs-Drabs/"/>
+    
+    
+  </entry>
+  
+</feed>
