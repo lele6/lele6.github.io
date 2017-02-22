@@ -89,18 +89,16 @@
 
 
 
-<meta name="description" content="This is my first time to write a blog.">
+<meta name="description" content="As an introduction, basic machine learning processes and categories are explained.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="A New Start">
-<meta property="og:url" content="http://lele6.github.io.com/2017/02/21/A-New-Start/index.html">
+<meta property="og:title" content="ML Intro">
+<meta property="og:url" content="http://lele6.github.io.com/2017/02/22/ML-Intro/index.html">
 <meta property="og:site_name" content="Le Le's Learning Palace">
-<meta property="og:description" content="This is my first time to write a blog.">
-<meta property="og:image" content="http://lele6.github.io.com/XinJiang.jpg">
-<meta property="og:updated_time" content="2017-02-22T00:55:09.000Z">
+<meta property="og:description" content="As an introduction, basic machine learning processes and categories are explained.">
+<meta property="og:updated_time" content="2017-02-22T18:37:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="A New Start">
-<meta name="twitter:description" content="This is my first time to write a blog.">
-<meta name="twitter:image" content="http://lele6.github.io.com/XinJiang.jpg">
+<meta name="twitter:title" content="ML Intro">
+<meta name="twitter:description" content="As an introduction, basic machine learning processes and categories are explained.">
 
 
 
@@ -128,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://lele6.github.io.com/2017/02/21/A-New-Start/"/>
+  <link rel="canonical" href="http://lele6.github.io.com/2017/02/22/ML-Intro/"/>
 
 
 
 
 
-  <title> A New Start | Le Le's Learning Palace </title>
+  <title> ML Intro | Le Le's Learning Palace </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -273,7 +271,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://lele6.github.io.com/2017/02/21/A-New-Start/">
+  <link itemprop="mainEntityOfPage" href="http://lele6.github.io.com/2017/02/22/ML-Intro/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Le Le">
@@ -297,7 +295,7 @@
             
             
               
-                A New Start
+                ML Intro
               
             
           </h1>
@@ -312,8 +310,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-21T19:13:51-05:00">
-                2017-02-21
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-22T10:13:42-05:00">
+                2017-02-22
               </time>
             
 
@@ -335,8 +333,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Dribs-Drabs/" itemprop="url" rel="index">
-                    <span itemprop="name">Dribs && Drabs</span>
+                  <a href="/categories/Machine-Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Machine Learning</span>
                   </a>
                 </span>
 
@@ -370,16 +368,120 @@
       
 
       
-        <p>This is my first time to write a blog.</p>
+        <p>As an introduction, basic machine learning processes and categories are explained.</p>
 <a id="more"></a>
-<p><img src="XinJiang.jpg" alt="Lovely family trip~"></p>
-<p>I am a paper-person. I enjoy the smell of ink and writing down ideas whenever I come up with. During classes, I prefer to print slides and make notes.</p>
-<p>One day, I saw the website of Xuanxuan, I was surprised, en, in a good way. Suddenly, I realized that I could not take those slides with my after my graduation. But I love these materials, filled with notes and thoughts learned from very good professors.</p>
-<p>So here I am.</p>
-<p>I want to take notes for what I have learned during the day.</p>
-<p>I want to make a summary for future reference.</p>
-<p>I want to simply better myself.</p>
-<p>Welcome to Le Le’s Learning Palace!</p>
+<h2 id="ML-Framework"><a href="#ML-Framework" class="headerlink" title="ML Framework"></a>ML Framework</h2><p>For most ML problems:</p>
+<ul>
+<li>formulate a task as a mapping from input to output</li>
+<li>formulate performance as an error measure</li>
+</ul>
+<ol>
+<li>Task - T</li>
+<li>Experience -  E: what is available; how much data we could get</li>
+<li>Output - O: number/class/probability/plan</li>
+<li><p>Performance measure - P: error/loss function<br>Classification loss<br>Accuracy<br>Confusion matrix: x-axis - predictions; y-axis - ground truth<br>ROC curve<br>Regression Loss: MAE, MSE, RMSE</p>
+</li>
+<li><p>Feature selection - choose the presentation of input X<br>!: try not to evaluate feature selection based on errors - may be resulted from the algorithm you choose<br>   Instead, use domain knowledge</p>
+</li>
+<li><p>Hypotheses Space - H: all the possible solutions<br>f: X -&gt; O</p>
+</li>
+<li><p>ML algorithm</p>
+</li>
+</ol>
+<p>Example:<br>T: predicting weather<br>E: historical weather data<br>P: the probability of correctly predicting a future day’s weather</p>
+<h2 id="Types"><a href="#Types" class="headerlink" title="Types"></a>Types</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:center">Data</th>
+<th style="text-align:left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Supervised Learning</td>
+<td style="text-align:center">task driven - training data with labels</td>
+<td style="text-align:left">classify person given face image, predicting income</td>
+</tr>
+<tr>
+<td style="text-align:left">Reinforcement Learning</td>
+<td style="text-align:center">data driven - training data with reward, not final label, solve interactive problems</td>
+<td style="text-align:left">robots, chess games, self-drive cars</td>
+</tr>
+<tr>
+<td style="text-align:left">Unsupervised Learning</td>
+<td style="text-align:center">given environment - training data without label</td>
+<td style="text-align:left">customer grouping, data compression, anomaly detection</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Categories"><a href="#Categories" class="headerlink" title="Categories"></a>Categories</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">Function Learned</th>
+<th style="text-align:center">Name</th>
+<th style="text-align:left">Performance Measure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">f: x -&gt; {CAT1, CAT2, …., CATk}</td>
+<td style="text-align:center">Classification</td>
+<td style="text-align:left">percentage of misclassification</td>
+</tr>
+<tr>
+<td style="text-align:left">f: x -&gt; R</td>
+<td style="text-align:center">Regression</td>
+<td style="text-align:left">MSE</td>
+</tr>
+<tr>
+<td style="text-align:left">f: event -&gt; p(event)</td>
+<td style="text-align:center">Logistic Regression</td>
+<td style="text-align:left">likelihood your model assigns to the events that actually happen</td>
+</tr>
+<tr>
+<td style="text-align:left">f: x -&gt; Pr(x)</td>
+<td style="text-align:center">Probability Density Estimation</td>
+<td style="text-align:left">not an external mapping</td>
+</tr>
+<tr>
+<td style="text-align:left">f: x -&gt; plan</td>
+<td style="text-align:center">Planning</td>
+<td style="text-align:left">not a single choice, but a bag of choices</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Roadmap-for-Machine-Learning-System"><a href="#Roadmap-for-Machine-Learning-System" class="headerlink" title="Roadmap for Machine Learning System"></a>Roadmap for Machine Learning System</h2><h3 id="Preprocessing"><a href="#Preprocessing" class="headerlink" title="Preprocessing"></a>Preprocessing</h3><ul>
+<li>Data cleaning</li>
+<li>Data augmentation: when data is not enough</li>
+<li>Split dataset:<ul>
+<li>training set: train model</li>
+<li>validation set: evaluate and select model</li>
+<li>test set</li>
+</ul>
+</li>
+<li>Feature extraction<ul>
+<li>get useful features:<ul>
+<li>hand crafted features</li>
+<li>learned features: e.g. CNN</li>
+</ul>
+</li>
+<li>Reduce dimensions</li>
+</ul>
+</li>
+</ul>
+<h3 id="Training-and-Selecting-Models"><a href="#Training-and-Selecting-Models" class="headerlink" title="Training and Selecting Models"></a>Training and Selecting Models</h3><ul>
+<li>Training: which model/approach to use</li>
+<li>Select model: validation<ul>
+<li>Overfitting</li>
+<li>Under fitting</li>
+</ul>
+</li>
+</ul>
+<h3 id="Cross-Validation"><a href="#Cross-Validation" class="headerlink" title="Cross Validation"></a>Cross Validation</h3><ul>
+<li>K-fold cross validation: divide dataset into k folds and one for test</li>
+<li>Leave-one-out cross validation: one sample for test; works for small dataset</li>
+</ul>
 
       
     </div>
@@ -410,15 +512,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/02/22/READ-ME/" rel="next" title="READ.ME">
+                <i class="fa fa-chevron-left"></i> READ.ME
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/02/22/READ-ME/" rel="prev" title="READ.ME">
-                READ.ME <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -465,8 +567,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -535,6 +646,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ML-Framework"><span class="nav-number">1.</span> <span class="nav-text">ML Framework</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Types"><span class="nav-number">2.</span> <span class="nav-text">Types</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Categories"><span class="nav-number">3.</span> <span class="nav-text">Categories</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Roadmap-for-Machine-Learning-System"><span class="nav-number">4.</span> <span class="nav-text">Roadmap for Machine Learning System</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Preprocessing"><span class="nav-number">4.1.</span> <span class="nav-text">Preprocessing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Training-and-Selecting-Models"><span class="nav-number">4.2.</span> <span class="nav-text">Training and Selecting Models</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cross-Validation"><span class="nav-number">4.3.</span> <span class="nav-text">Cross Validation</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
