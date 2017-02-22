@@ -1700,7 +1700,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff65af;
+  background: #9013f5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2789,4 +2789,10 @@ hr {
 }
 body {
   background: url("/images/cover.jpg");
+}
+.main-inner {
+  margin-top: 0;
+  padding: 80px 60px 10px 60px;
+  background: #fff;
+  min-height: 500px;
 }
