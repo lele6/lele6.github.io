@@ -71,12 +71,10 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Machine Learning," />
 
 
 
-
-  
 
 
   <link rel="alternate" href="/atom.xml" title="Le Le's Learning Palace" type="application/atom+xml" />
@@ -91,28 +89,16 @@
 
 
 
-<meta name="description" content="Here I am.
-A person who loves data and coding.
-A person who loves learning machine learning algorithms.
-A person who is during crazy job hunting period.
-A person who love pink pink stuff.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="About">
-<meta property="og:url" content="http://lele6.github.io.com/About/index.html">
+<meta name="description" content="K-means, KNN, SVM…">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Classic ML Algorithms">
+<meta property="og:url" content="http://lele6.github.io.com/2017/02/24/Classic-ML-Algorithms/index.html">
 <meta property="og:site_name" content="Le Le's Learning Palace">
-<meta property="og:description" content="Here I am.
-A person who loves data and coding.
-A person who loves learning machine learning algorithms.
-A person who is during crazy job hunting period.
-A person who love pink pink stuff.">
-<meta property="og:updated_time" content="2017-02-24T17:44:50.000Z">
+<meta property="og:description" content="K-means, KNN, SVM…">
+<meta property="og:updated_time" content="2017-02-24T16:55:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="About">
-<meta name="twitter:description" content="Here I am.
-A person who loves data and coding.
-A person who loves learning machine learning algorithms.
-A person who is during crazy job hunting period.
-A person who love pink pink stuff.">
+<meta name="twitter:title" content="Classic ML Algorithms">
+<meta name="twitter:description" content="K-means, KNN, SVM…">
 
 
 
@@ -140,19 +126,13 @@ A person who love pink pink stuff.">
 
 
 
-  <link rel="canonical" href="http://lele6.github.io.com/About/"/>
+  <link rel="canonical" href="http://lele6.github.io.com/2017/02/24/Classic-ML-Algorithms/"/>
 
 
 
 
 
-  <title>
-  
-
-  
-    About | Le Le's Learning Palace
-  
-</title>
+  <title> Classic ML Algorithms | Le Le's Learning Palace </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -177,7 +157,7 @@ A person who love pink pink stuff.">
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -282,23 +262,192 @@ A person who love pink pink stuff.">
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
 
-	<h1 class="post-title" itemprop="name headline">About</h1>
+  
 
+  
+  
+  
 
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://lele6.github.io.com/2017/02/24/Classic-ML-Algorithms/">
 
-</header>
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Le Le">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Le Le's Learning Palace">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Le Le's Learning Palace" src="">
+    </span>
+  </span>
 
     
-    
-      <p>Here I am.</p>
-<p>A person who loves data and coding.</p>
-<p>A person who loves learning machine learning algorithms.</p>
-<p>A person who is during crazy job hunting period.</p>
-<p>A person who love pink pink stuff.</p>
+      <header class="post-header">
 
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Classic ML Algorithms
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-24T10:46:17-05:00">
+                2017-02-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>K-means, KNN, SVM…</p>
+<a id="more"></a>
+<h1 id="K-means"><a href="#K-means" class="headerlink" title="K-means"></a>K-means</h1><ol>
+<li><p>clustering algorithm:</p>
+<ul>
+<li>based on feature similarity</li>
+<li>results: centroids of the k clusters which are used to label new data; labels for training data</li>
+<li>optimization function: minimize “within cluster sum-of-squares”</li>
+</ul>
+</li>
+<li><p>process:</p>
+<ul>
+<li><p>choose k: based on data; try different k and select the one with least sum-of-squares</p>
+</li>
+<li><p>select k centers: (initialization)<br> forgy: randomly select<br> random partition: assign a cluster randomly to each observation and compute means<br> another way: K-means++ - aim to let centers be distant from each other</p>
+</li>
+<li><p>for each point, calculate its distance from each centers</p>
+</li>
+<li>for each point, assign it to the closest center</li>
+<li>relocate centers</li>
+<li>repeat step 2-4 until convergence</li>
+</ul>
+</li>
+<li><p>advantages:</p>
+<ul>
+<li>fast, robust and easy to understand</li>
+<li>O(tknd): n - # objects, k - # clusters, d - dimensions of each object, t - iterations<pre><code>normally, k, t, d &lt;&lt; n
+</code></pre></li>
+<li>when data points are distinct or well separated from each other</li>
+</ul>
+</li>
+<li><p>disadvantages:</p>
+<ul>
+<li>require a prior specification of k</li>
+<li>exclusive assignment</li>
+<li>unable to handle noisy data and outliers</li>
+<li>fails for non-linear dataset</li>
+</ul>
+</li>
+<li><p>local minimum<br>Given enough time, K-means will always converge, but it may be a local minimum.<br>This highly depends on the cluster initialization<br>– K-means++: improve center initialization</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Machine-Learning/" rel="tag"># Machine Learning</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/22/ML-Intro/" rel="next" title="ML Intro">
+                <i class="fa fa-chevron-left"></i> ML Intro
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
           
@@ -307,6 +456,10 @@ A person who love pink pink stuff.">
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -326,8 +479,17 @@ A person who love pink pink stuff.">
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -403,6 +565,22 @@ A person who love pink pink stuff.">
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#K-means"><span class="nav-number">1.</span> <span class="nav-text">K-means</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -508,6 +686,10 @@ A person who love pink pink stuff.">
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
